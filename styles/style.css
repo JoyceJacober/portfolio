@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,100;1,300;1,500&family=Krona+One&display=swap');
+
+:root {
+ --cor-primaria: #000000;
+ --cor-secundaria: #f6f6f6;
+ --cor-terciaria: #22d4fd;
+ --cor-hover: #272727;
+
+ --fonte-primaria: 'Josefin Sans', sans-serif;
+ --fonte-secundaria:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.CABECALHO {
+    padding: 2% 0% 0% 18%;
+}
+
+.CABECALHO__MENU {
+    display: flex;
+    gap: 80px;
+}
+
+.CABECALHO__MENU__LINK {
+    color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.TITULO-PRINCIPAL {
+    color: var(--cor-terciaria);
+}
+
+.CONTEUDO {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.CONTEUDO__FILHO {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.CONTEUDO__FILHO__TITULO {
+    font-size: 2.8rem;
+    font-family: var(--fonte-primaria);
+}
+
+.CONTEUDO__FILHO__PARAGRAFO {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+
+    
+}
+.CONTEUDO__FILHO__ANCORA {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+}
+.CONTEUDO__FILHO__ANCORA__SUBTITULO {
+    font-family: var(--fonte-secundaria);
+    font-weight: 400px;
+    font-size: 1.5rem;
+
+}
+
+.CONTEUDO__FILHO__LINK {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 300px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.18rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+}
+
+.CONTEUDO__FILHO__LINK:hover {
+    background-color: var(--cor-hover);
+}
+
+.CONTEUDO__IMAGEM {
+    width: 50%;
+}
+
+.RODAPE {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+@media (max-width:1200px) {
+    .CABECALHO {
+        padding: 5% 0% 0% 0%;
+    }
+    .CABECALHO__MENU {
+        justify-content: center;
+    }
+    .CONTEUDO {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .CONTEUDO__FILHO {
+        width: auto;
+    }
+    .CONTEUDO__FILHO__LINK {
+        width: 250px;
+    }
+}
